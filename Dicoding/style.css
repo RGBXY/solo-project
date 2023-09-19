@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  width: 75%;
+}
+
+/* Navbar Start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #7ea92e;
+  background-color: #1e1e1e;
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.logo {
+  margin: 1.1rem 2rem;
+  font-family: "Bruno Ace SC";
+  color: #91c235;
+}
+
+.nav-con{
+  margin: 1.1rem 2rem;
+  display: none;
+}
+
+.navbar-nav {
+  margin-right: 1rem;
+}
+
+nav .navbar-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+  font-family: "Poppins";
+}
+
+.navbar-nav ul li {
+  margin: 1.2rem 1.6rem;
+}
+
+.navbar-nav ul li a {
+  color: #91c235;
+}
+
+.navbar-nav ul li a:hover {
+  color: #b8dc76;
+  text-decoration: 1px solid;
+}
+
+.navbar-nav ul li a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid #91c235;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar-nav ul li a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar-extra {
+  margin: 1.2rem 3rem;
+}
+
+.navbar-extra a {
+  margin-left: 1rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+/* Navbar End */
+
+/* content Start */
+/* Main Start */
+.hero {
+  min-height: 86vh;
+  font-family: "Poppins";
+  margin-top: 6.8rem;
+}
+
+.homie,
+.list1,
+.list2,
+.list3,
+.list4,
+.list5 {
+  margin: 2rem 3rem 0 3rem;
+}
+
+.homie .contentimg2 {
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+
+.homie .textsayah {
+  color: #797979;
+}
+
+.textsayah span {
+  color: #91c235;
+  font-weight: 700;
+}
+
+.homie .contentimg3 {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.homie .textsaya {
+  color: #797979;
+  font-size: 14px;
+}
+
+.homie .logo2 {
+  font-size: 40px;
+}
+
+.homie .textsaya1 {
+  text-indent: 45px;
+  text-align: justify;
+  margin-top: 1.5rem;
+}
+
+.homie .textsaya2 {
+  margin-top: 1rem;
+  text-indent: 45px;
+  text-align: justify;
+}
+/* Main End */
+
+/* List Start*/
+#list-1 {
+  padding-top: 5rem;
+}
+
+.list1,
+.list2,
+.list3,
+.list4,
+.list5 {
+  font-family: "Poppins";
+}
+
+.list-title2,
+.list-title3,
+.list-title4,
+.list-title5 {
+  margin-top: 2rem;
+}
+
+.list-img1,
+.list-img2,
+.list-img3,
+.list-img4,
+.list-img5 {
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.text-list2,
+.text-list4,
+.text-list6,
+.text-list8,
+.text-list10 {
+  margin: 1rem 0 1rem 0;
+}
+/* Content End */
+
+/* Aside Start */
+aside {
+  width: 35%;
+  right: 0;
+  font-family: "Poppins";
+  color: rgb(8, 8, 8);
+  margin-top: 5.2rem;
+  height: 5200px;
+}
+
+.sidebar_widget {
+  position: sticky;
+  top: 3.8rem;
+}
+
+aside .latest {
+  margin-top: 2.2rem;
+}
+
+aside .side1 {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+aside .sideicon1,
+.sideicon3 {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+aside .sidetext1,
+.sidetext3 {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.side2 {
+  margin: 1rem 0 2.5rem 0;
+  display: flex;
+}
+
+.side2 h5 {
+  width: 13rem;
+  margin-right: 1.5rem;
+}
+
+.side2 img {
+  border-radius: 10px;
+  width: 8rem;
+  height: 5.5rem;
+}
+
+.sideicon2 {
+  width: 13px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.sidetext2 {
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.side3 {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+/* Aside End */
+
+/* Contact Section */
+.contact {
+  margin: 5rem 3rem;
+  text-align: center;
+  padding-top: 6rem;
+  font-family: "Poppins";
+}
+.contact .sosmeds {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact img {
+  width: 10rem;
+  margin-top: 1rem;
+  border-radius: 50%;
+  border: 3px solid #7ea92e;
+}
+
+.contact .sos {
+  margin: 1rem 0 1rem 0;
+  color: #91c235;
+}
+
+.contact .sos span {
+  color: #b8dc76;
+}
+
+.contact .sosmed {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  align-items: center;
+  width: 50%;
+  border: 3px solid #7ea92e;
+  background-color: #1e1e1e;
+}
+
+.content .sosmeds .sosmed {
+  padding: 0 0 1.5rem;
+  border: 1px solid;
+  display: flex;
+}
+
+.sosmed .insta a {
+  display: inline-block;
+  height: 25px;
+  width: 12rem;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #91c235;
+  transition: all 0.2s ease-in-out;
+}
+
+.insta .icon1 {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+.insta .text1 {
+  vertical-align: middle;
+  color: rgb(46, 46, 46);
+}
+
+.insta a:hover {
+  background-color: #7ea92e;
+  transition: all 0.2s ease-in-out;
+}
+
+.sosmed .drib a {
+  display: inline-block;
+  height: 25px;
+  width: 12rem;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #91c235;
+  margin-top: 1rem;
+}
+
+.drib .icon2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+.drib .text2 {
+  vertical-align: middle;
+  color: rgb(46, 46, 46);
+}
+
+.drib a:hover {
+  background-color: #7ea92e;
+  transition: all 0.2s ease-in-out;
+}
+
+.sosmed .face a {
+  display: inline-block;
+  height: 25px;
+  width: 12rem;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #91c235;
+  margin-top: 1rem;
+}
+
+.face .icon3 {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+.face .text3 {
+  vertical-align: middle;
+  color: rgb(46, 46, 46);
+}
+
+.face a:hover {
+  background-color: #7ea92e;
+  transition: all 0.2s ease-in-out;
+}
+
+.sosmed .what a {
+  display: inline-block;
+  height: 25px;
+  width: 12rem;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #91c235;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.what .icon4 {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+.what .text4 {
+  vertical-align: middle;
+  color: rgb(46, 46, 46);
+}
+
+.what a:hover {
+  background-color: #7ea92e;
+  transition: all 0.2s ease-in-out;
+}
+/* Contact End */
+
+/* Footer */
+footer {
+  font-family: "Poppins";
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: #91c235;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer .credit a {
+  color: #91c235;
+  font-weight: 700;
+}
+/* Footer End */
+
+/* Media Quary */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  aside {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Handphone */
+@media (max-width: 576px) {
+  html {
+    font-size: 100%;
+  }
+
+  .homie,
+  .list1,
+  .list2,
+  .list3,
+  .list4,
+  .list5 {
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  .homie .logo2{
+    font-size: 28px;
+  }
+
+  .nav-con{
+    display: flex;
+  }
+
+  .navbar-nav{
+    position: absolute;
+  }
+}
